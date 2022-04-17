@@ -1,0 +1,13 @@
+# Requirements for
+# https://github.com/MNGuenther/allesfitter
+
+#
+# Standard Packages
+#
+
+## python_version >= 3.5
+numpy
+scikit-learn
+matplotlib
+seaborn
+tqdm

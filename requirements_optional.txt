@@ -1,0 +1,16 @@
+# Requirements for
+# https://github.com/MNGuenther/allesfitter
+
+#
+# allesfitter optional
+#
+
+# [6] optional; if you want top-down-view plots of the orbits (you might not yet know, but you do.)
+rebound >=3.8.0
+
+# [7] optional; if you want to search for transits and guesstimate TTVs (you might not yet know, but you do.)
+wotan >=1.9
+
+# [8] optional; if you want to search for transits (you might not yet know, but you do.)
+transitleastsquares >=1.0.25
+

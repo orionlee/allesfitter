@@ -1,0 +1,47 @@
+# Requirements for
+# https://github.com/MNGuenther/allesfitter
+
+#
+# allesfitter almost-required, semi-optional
+#
+
+# [1] semi-optional; for planets and binaries; see below for troubleshooting
+# - https://www.allesfitter.com/installation
+ellc >= 1.8.0
+
+# [2] semi-optional; for Nested Sampling
+dynesty >=0.9.3
+
+# [3] semi-optional; for MCMC
+emcee >=3.0.0
+# used by allesfitter/mcmc.py
+statsmodels
+
+#[4] semi-optional; for Gaussian Processes
+celerite >=0.3.0
+
+#[5] semi-optional; if you want corner plots (you know you do.)
+corner >=2.0.1
+
+# required by allesfitter.GUI()
+notebook 
+ipywidgets
+
+# Additional manual setup for running the GUI:
+#
+# tkinter: if it's not in python distribution, you need to install it separately
+# You can test if tkinter is installed by:
+#     python -m tkinter
+# You will a small window pop-up if it's installed ..
+#
+# To install tkinter, on Ubuntu for Python 3, run the following in command line:
+#     sudo apt-get install python3-tk
+# On Windows with Anaconda, run: 
+#     conda install tk
+#
+# If the widgets are not shown in the notebook, you need to enable the Jupyter extension
+
+# Run the following in command line, if you use virtual environments:
+#   jupyter nbextension enable --py --sys-prefix widgetsnbextension
+#
+
